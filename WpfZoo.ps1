@@ -1,31 +1,3 @@
-﻿#■プログラムの説明
-#・WPFの色々な部品(コントロール)を表示するデモプログラムです。
-#・表示だけでなくクリックしたボタンの表示(画面下部に表示)等も行います
-#　・TabItem1：ボタン、リスト、テーブル等をクリックしてみてください。
-#　・TabItem2：カレンダー、Expanderや、スライダーを試してみてください。
-#　・Tab for DockPanel：MenuItemや、画面左のTreeViewで項目を選択してみてください。
-#　・Tab for DocumentViewer：xpsのビューアーです、ズーム等ができます。
-#　・Frames：画面上のボタンをクリックしてFrameを表示してみてください。
-#　・Media：動画の再生、一時停止、再生ができます。
-#　・RitchTextBox：表示内容の書換、文字属性や文節属性の変更ができます。
-#　　ただし「下付き」「上付き」は、数字以外は上手く行きません。(原因不明）
-#■実行方法
-#・本ファイルがあるフォルダでコマンドプロンプトを開き下記を実行
-#　powershell -sta -file WpfZoo.ps1
-#■画面上の各WPFコントロールに対応するxamlの確認方法
-#・Visual StudioでWPFプロジェクトを新規作成
-# 　・参考：http://itsukara.hateblo.jp/entry/2017/03/23/002632
-#・画面下のxaml文字列の<Grid>以下の行を、下記のxamlの<Grid>以下の行で置換
-#　・これにより、本プログラムと同様の画面が表示される
-#　・ただし、下記xaml中の文字列PSScriptRootを、本スクリプトのパスで置換する必要あり
-#・画面上のWPFコントロールをクリックして選択すると、xaml中で対応する部分が選択される
-#■バージョン等
-#・プログラム名：WpfZoo.ps1
-#・バージョン　：V1.0.1
-#・作成日　　　：2017/04/02
-#・最終更新日　：2017/04/04
-#・作成者　　　：Itsukara (Takayoshi Iitsuka)、iitt21-t@yahoo.co.jp、http://itsukara.hateblo.jp
-
 $ErrorActionPreference = "stop"
 Set-PSDebug -Strict
 
